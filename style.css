@@ -70,7 +70,7 @@ body {
         rgba(11, 19, 32, 0.9) 0%, 
         rgba(230, 81, 0, 0.7) 100%
     ), 
-    url('/backroundImage.jpg') center/cover no-repeat;
+    url('backroundImage.jpg') center/cover no-repeat;
 
     display: flex;
     align-items: center;
