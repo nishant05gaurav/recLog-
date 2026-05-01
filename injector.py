@@ -44,7 +44,7 @@ def injectArticleCard(articleData, summaryByAi):
     # Logging which article is being processed
     print(f"Processing article: {articleData['title']}")
 
-    # Handling case - HTML file does not exist
+    # HTML file does not exist
     if not os.path.exists(HTML_FILE_PATH):
         print(f"File not found: {HTML_FILE_PATH}")
         return False
@@ -56,7 +56,7 @@ def injectArticleCard(articleData, summaryByAi):
     # Searching for the anchor comment in the HTML
     lookForComment = soup.find(string=isMyAnchhorComment)
     
-    # Handling case - anchor comment not found
+    # Anchor comment not found
     if not lookForComment:
         print("Anchor comment not found in HTML. Skipping injection.")
         return False
@@ -64,7 +64,7 @@ def injectArticleCard(articleData, summaryByAi):
     # Retrieving the primary image URL from article data
     imageUrlPrimary = articleData.get('coverImage')
     
-    # Handling case - no image available
+    # No image available
     if not imageUrlPrimary:
         imageUrlPrimary = "https://placehold.co/600x300/e65100/white?text=RecLog+Insight"
 

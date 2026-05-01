@@ -13,8 +13,7 @@ DEV_API_URL = "https://dev.to/api/articles/me"
 
 def fetchMyArticles():
     """
-    Fetch all articles of the authenticated user from dev.to. This function makes a request to the dev.to API using the provided API key,
-    retrieves the user's articles, and extracts only the required fields such as title, URL, cover image, markdown content, and tags.
+    Fetch all articles of the authenticated user from dev.to. This function makes a request to the dev.to API using the provided API key, retrieves the user's articles, and extracts only the required fields such as title, URL, cover image, markdown content, and tags.
 
     Returns:
         list: A list of dictionaries containing cleaned article data. Returns an empty list if the request fails.

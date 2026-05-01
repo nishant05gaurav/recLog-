@@ -45,7 +45,7 @@ def updateArticle():
     for latest in newArticles:
         print(f"Working on: {latest['title']}")
 
-        # Summary generation (As per your requirement: you can pass empty or AI summary)
+        # Summary generation 
         print("Generating Summary")
         summaryByAi = generateSummary(latest['body_markdown'])
 
